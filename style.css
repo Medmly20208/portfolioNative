@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+:root{
+    --primary-color:#3b82f6
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 7em;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+.section_link{
+    font-size: larger;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+}
+
+.section_link:hover{
+    color: var(--primary-color);
+}
+
+#hero{
+    padding: 2em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   gap: 2em;
+  
+}
+.intro{
+    width: 40%;
+}
+
+.actions{
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    gap: 1.5em;
+   
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    padding:0.5em 1em;
+
+}
+
+.btn:hover{
+   color: var(--primary-color);
+   background-color: white;
+   border-color: var(--primary-color);
+}
+
+#hero .socials{
+    display: flex;
+    gap: 1em;
+}
+
+
+
+.personnelImg{
+    width: 100%;
+   
+    min-width: 300px;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    z-index: 10000;
+}
+
+
+.personnel_img_container:hover::after{
+    transform: rotate(30deg);
+}
+.personnel_img_container{
+    width: 30%;
+    min-width: 300px;
+    height: fit-content;
+    position: relative;
+    
+    
+}
+.personnel_img_container::after{
+    content: "";
+    position: absolute;
+    
+    width: 95%;
+    height: 95%;
+    left: 5px;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all;
+    transform: rotate(0deg);
+    transition-duration: 200ms;
+    
+}
+
+#hero h1{
+    margin:0.5em 0em;
+    color: var(--primary-color);
+    font-size: 2em;
+
+}
