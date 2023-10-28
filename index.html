@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
    <head>
     <title>Mly || fullstack developer</title>
     <meta charset="utf-8"/>
     <link rel="icon" href="/assets/images/logo.png" type="image/png">
     <link rel="stylesheet" href="./style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Full stack developer helping businesses building their web applications using Reactjs | Nodejs | Express | Mongodb">
+
      <!--iconify design-->
      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
@@ -15,7 +17,7 @@
    </head>
     <body>
         <header>
-            <img src="./assets/images/logo.png"/>
+            <img src="./assets/images/logo.png" alt="logo"/>
             <nav>
                 <ul>
                     <li ><a class="section_link " href="#about">About</a></li>
@@ -54,12 +56,14 @@
                <div class="intro">
                   <h3>Hi , I am Mohamed Moulay 👋</h4>
                   <h1>a full stack developer</h2>
-                  <p>As a Full-Stack Developer, I deliver exceptional value to businesses by providing a one-stop solution for their web and software development needs. By offering expertise in both frontend and backend development, I streamline development processes,</p>
+                  <p>As a Full-Stack Developer, I deliver exceptional value to businesses by providing a one-stop solution for their web and software development needs. By offering expertise in both frontend and backend development.</p>
                   <div class="actions">
-                    <a class="btn">Get my resume</a>
+                    
+                    <a class="file_download" href="/assets/files/myCv.pdf" download></a>
+                    <a class="btn" id="download_resume">Get my resume</a>
                     <div class="socials">
-                        <a href="https://github.com/medmly20208" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
-                        <a href="https://linkedin.com/in/moulaymohamed" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:linkedin"></iconify-icon>
+                        <a aria-label="github" href="https://github.com/medmly20208" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
+                        <a  aria-label="linkedin" href="https://linkedin.com/in/moulaymohamed" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:linkedin"></iconify-icon>
                         </iconify-icon></a>
                     </div>
                   </div>
@@ -75,11 +79,7 @@
                 <div class="about_container">
                    
                     <div>
-                        <p>Hi there, I am frontend developer specializing in React and TailwindCss I built many projects using this stack, and I am also an engineering student in ENSA, My journey in web development started in 2021 when I started to learn Html, Css, and Javascript, I built many basic projects with it.<br></br>
-
-                            then I moved to learn React where I got a React certificate from ACADEMIND, and I built more projects with React while trying to combine TailwindCss with it.<br><br/>
-                            
-                            after that, I got an internship in the summer in a startup where I improved my skills in frontend development and learned how to collaborate with the dev team using Git and GitHub, now I am focusing on building more projects with React while also learning Express, MongoDB, and Node to be a full stack developer, and I am open to any new opportunity. <br></br>This is My skills:</p>
+                        <p>I am a highly skilled Full stack Developer and aspiring engineer, currently pursuing my degree in Engineering. With expertise in Tailwind CSS, ReactJS, JavaScript, HTML, CSS, Nodejs and express, I possess a strong foundation in web development. Committed to combining my technical skills with a creative mindset, I strive to deliver visually appealing and user-friendly web applications. As an enthusiastic learner, I eagerly embrace new technologies and stay updated with industry trends. I am passionate about leveraging my engineering background to create innovative solutions and contribute to the ever-evolving digital landscape.</p>
                          <ul class="skills">
                             <li>Html</li>
                             <li>Css</li>
@@ -123,7 +123,7 @@
                                 <li>
                                     - I built with my team a mobile app with user-friendly interface that allowed users to search and locate doctors, schedule appointments, discover nearby laboratories, and identify hospitals within their
                                     preferred geographic regions.
-                                </li><br>
+                                </li>
                                 <li>
                                     - I collaborated closely with the remote development team, effectively communicating project goals, progress, and milestones to ensure a coordinated and successful development process.
                                 </li>
@@ -158,11 +158,11 @@
                                
                                 <li>
                                     -I built a fullstack ecommerce store and improve its performance from 50 to 73 by using best practices like lazy loading and using performant image extensions like webp.
-
-                                </li><br>
+                                   
+                                </li>
                                 <li>
-                                    -I worked on testing using modern technologies like BURP.                                </li>
-                                  <br>  <li> -I designed the interface of a platform with almost 10 pages using figma.</li>
+                                    -I worked on testing using modern technologies like BURP.                              </li>
+                                    <li> -I designed the interface of a platform with almost 10 pages using figma.</li>
                                 
                             </ul>
                             <div class="experience_skills">
@@ -196,10 +196,10 @@
                                
                                 <li>
                                     -I  built a fullstack app in the consulting field which was a marketplace that link consultants with companies .
-                                </li><br>
+                                    </li>
                                 <li>
                                     -I built a frontend app in the farming industry where farmers can monitor their Bees ,I worked with a backend dev in this project.                             </li>
-                                   <br> <li> -I built a frontend app in GIS field,the idea of the project is that users can choose any place in the world then they will get the ndvi ,ndwi... layers for this place plus a history of their values all this using sentinel hub api.</li>
+                                    <li> -I built a frontend app in GIS field,the idea of the project is that users can choose any place in the world then they will get the ndvi ,ndwi... layers for this place plus a history of their values all this using sentinel hub api.<br></li>
                                 
                             </ul>
                             <div class="experience_skills">
@@ -260,18 +260,21 @@
                         <div class="project_content">
                             
                             <h3>Spend Tracker</h3>
-                            <p>Track Your Expenses, Master Your Finances with SpendTracker! "SpendTracker" a 🚀 Finance App I developed using the power of MERN Stack – MongoDB, Express, React, and Node.js plus tailwindcss,redux-toolkit and rtk query</p>
+                            <p>Spend Tracker is a finance app where users can
+                                manage their expenses , view their data in a userfriendly dashboard, chat with other users in group
+                                chats ,create blog posts and see blog posts of other
+                                users.</p>
                             <p class="tech_stack_project"><strong>Tech Stack :  </strong>Reactjs,MongoDB,Express,Nodejs,Tailwindcss,Reduxtoolkit.
                            </p>
                             <div class="actions">
                                 <div>
                                     <p>Github</p>
-                                    <a href="https://github.com/medmly20208/spendTracker" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
+                                    <a aria-label="github" href="https://github.com/medmly20208/spendTracker" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
 
                                 </div>
                                 <div>
                                     <p>Demo</p>
-                                    <a href="https://spend-tracker-2gpi.vercel.app/" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:internet"></iconify-icon></a>
+                                    <a  href="https://spend-tracker-2gpi.vercel.app/" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:internet"></iconify-icon></a>
 
                                 </div>
          
@@ -308,13 +311,13 @@
                         <div class="project_content">
                             
                             <h3>Prime Kit UI</h3>
-                            <p>an open-source project that combines the power of React and the flexibility of Tailwind CSS to streamline your web development experience</p>
+                            <p>an open-source project that combines the power of React and the flexibility of Tailwind CSS to streamline your web development experience.</p>
                             <p class="tech_stack_project"><strong>Tech Stack :  </strong>Reactjs,tailwindcss
                            </p>
                             <div class="actions">
                                 <div>
                                     <p>Github</p>
-                                    <a href="https://github.com/Medmly20208/PrimeKitUI" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
+                                    <a aria-label="github" href="https://github.com/Medmly20208/PrimeKitUI" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
 
                                 </div>
                                 <div>
@@ -370,8 +373,8 @@
         <footer>
             <p>ALL rights reserved @2023</p>
             <div class="socials_footer">
-                <a href="https://github.com/medmly20208" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
-                <a href="https://linkedin.com/in/moulaymohamed" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:linkedin"></iconify-icon>
+                <a aria-label="github" href="https://github.com/medmly20208" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="charm:github"></iconify-icon></a>
+                <a aria-label="linkedin" href="https://linkedin.com/in/moulaymohamed" target="_blank"><iconify-icon  style="color: black; font-size: 1.4em" icon="mdi:linkedin"></iconify-icon>
                 </iconify-icon></a>
             </div>
         </footer>
