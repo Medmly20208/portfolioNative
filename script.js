@@ -4,6 +4,9 @@ const backdrop = document.getElementsByClassName("backdrop")
 const downlaodBtn = document.getElementById("download_resume")
 const fileLinks = document.getElementsByClassName("file_download")
 
+
+
+
 navIcon[0].onclick = ()=>{
     mobileNav[0].style.display="block"
 }
