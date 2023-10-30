@@ -18,36 +18,46 @@
 </head>
    </head>
     <body>
-        <header>
-            <img src="./assets/images/logo.png" alt="logo"/>
-            <nav>
-                <ul>
-                    <li ><a class="section_link " href="#about">About</a></li>
-                    <li ><a class="section_link " href="#experience">Experience</a></li>
-                    <li ><a class="section_link " href="#projects">Projects</a></li>
-                    <li ><a class="section_link " href="#contact">Contact</a></li>
-                    
-                </ul>
-            </nav>
-            <div class="nav_icon">
-                <iconify-icon  style="color: black; font-size: 1.4em" icon="fa:navicon"></iconify-icon>
-            </iconify-icon>
-            </div>
-
-            <div class="mobile_nav">
-                <div class="backdrop"></div>
-                <div class="mobile_nav_content">
-                    <img src="assets/images/logo.png"/>
-                    <ul >
-                        <li ><a class="section_link mobile" href="#about">About</a></li>
-                        <li ><a class="section_link mobile" href="#experience">Experience</a></li>
-                        <li ><a class="section_link mobile" href="#projects">Projects</a></li>
-                        <li ><a class="section_link mobile" href="#contact">Contact</a></li>
+        <header >
+            <div class="header_container">
+                <img src="./assets/images/logo.png" alt="logo"/>
+                <nav>
+                    <ul>
+                        <li ><a class="section_link " href="#about">About</a></li>
+                        <li ><a class="section_link " href="#experience">Experience</a></li>
+                        <li ><a class="section_link " href="#projects">Projects</a></li>
+                        <li ><a class="section_link " href="#contact">Contact</a></li>
                         
                     </ul>
+                </nav>
+                <div class="nav_icon">
+                    <iconify-icon  style="color: black; font-size: 1.4em" icon="fa:navicon"></iconify-icon>
+                </iconify-icon>
                 </div>
-
+    
+               
+                    
+                    <div class="mobile_nav_content">
+                        <div style="width: 100%;">
+                            <div class="close_icon_btn">
+                                <iconify-icon  style="color: black; font-size: 1.4em" icon="akar-icons:cross"></iconify-icon>
+                            </div>
+                           
+                           
+                        </div>
+                        
+                        <ul >
+                            <li ><a class="section_link mobile" href="#about">About</a></li>
+                            <li ><a class="section_link mobile" href="#experience">Experience</a></li>
+                            <li ><a class="section_link mobile" href="#projects">Projects</a></li>
+                            <li ><a class="section_link mobile" href="#contact">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+    
             </div>
+           
+           
          
             
 
@@ -77,23 +87,12 @@
                
             </section>
             <section id="about">
-                <h1 class="title">About Me<span style="color: black">.</span></h1>
+                <h1 class="title">About Me</h1>
                 <div class="about_container">
                    
                     <div>
                         <p>I am a highly skilled Full stack Developer and aspiring engineer, currently pursuing my degree in Engineering. With expertise in Tailwind CSS, ReactJS, JavaScript, HTML, CSS, Nodejs and express, I possess a strong foundation in web development. Committed to combining my technical skills with a creative mindset, I strive to deliver visually appealing and user-friendly web applications. As an enthusiastic learner, I eagerly embrace new technologies and stay updated with industry trends. I am passionate about leveraging my engineering background to create innovative solutions and contribute to the ever-evolving digital landscape.</p>
-                         <ul class="skills">
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>Typescript</li>
-                            <li>Reactjs</li>
-                            <li>Tailwindcss</li>
-                            <li>Nodejs</li>
-                            <li>Express</li>
-                            <li>mongodb</li>
-                            <li>python</li>
-                         </ul>
+                         
                         </div>
                    
                 </div>
@@ -101,8 +100,69 @@
 
 
             </section>
+            <section id="skills">
+                <h1 class="title">Skills</h1>
+                <div class="skills_container">
+                   
+                    
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="vscode-icons:file-type-html"></iconify-icon>
+                            <h4>Html </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="skill-icons:javascript"></iconify-icon>
+                            <h4>Javascript </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="vscode-icons:file-type-css"></iconify-icon>
+                            <h4>Css </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="logos:python"></iconify-icon>
+                            <h4> python </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="skill-icons:typescript"></iconify-icon>
+                            <h4> Typescript </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="vscode-icons:file-type-reactjs"></iconify-icon>
+                            <h4> Reactjs </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="devicon:tailwindcss"></iconify-icon>
+                            <h4>  Tailwindcss </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="logos:nodejs-icon-alt"></iconify-icon>
+                            <h4>  Nodejs </h4>
+                        </div>
+                       
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="devicon:express"></iconify-icon>
+                            <h4>  Express </h4>
+                        </div>
+                        <div class="skill_container">
+                            <iconify-icon class="skill_icon"  icon="devicon:mongodb"></iconify-icon>
+                            <h4>  mongodb </h4>
+                        </div>
+                           
+                           
+                           
+                            
+                            
+                            
+                            
+                        
+                        
+                   
+                </div>
+              
+
+
+            </section>
             <section id="experience">
-                <h1 class="title">Experience<span>.</span></h1>
+                <h1 class="title">Experience</h1>
                 <div class="experience_container">
                     <div class="experience_item">
                        
@@ -255,7 +315,7 @@
                 </div>
             </section>
             <section id="projects">
-                <h1 class="title">Projects<span>.</span></h1>
+                <h1 class="title">Projects</h1>
                 <div class="project_container">
                     <div class="project_item">
                         <img src="assets/images/spendtracker.jpg" alt="platform"/>
@@ -334,7 +394,7 @@
                 </div>
             </section>
             <section id="contact">
-                <h1 class="title">Contact<span>.</span></h1>
+                <h1 class="title">Contact</h1>
                 <div class="container_contact">
                     <div class="contact_item">
                         <div class="icon_container">

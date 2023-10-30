@@ -1,19 +1,43 @@
 const navIcon = document.getElementsByClassName("nav_icon")
 const mobileNav = document.getElementsByClassName("mobile_nav")
-const backdrop = document.getElementsByClassName("backdrop")
+const mobileNavContent = document.getElementsByClassName("mobile_nav_content")
+const closeNavBtn = document.getElementsByClassName("close_icon_btn")
+const lists = document.getElementsByClassName("section_link mobile")
 const downlaodBtn = document.getElementById("download_resume")
+const header = document.getElementsByTagName("header")
 const fileLinks = document.getElementsByClassName("file_download")
 
 
 
 
 navIcon[0].onclick = ()=>{
-    mobileNav[0].style.display="block"
+    mobileNavContent[0].style.left = "0px"
+  
 }
 
-backdrop[0].onclick = ()=>{
-    mobileNav[0].style.display="none"
+window.onscroll = ()=>{
+    
+    if(window.scrollY!=0){
+        return header[0].classList.add("header_shadow")
+    }
+    header[0].classList.remove("header_shadow")
 }
+
+console.log(typeof(lists))
+Object.values(lists).map((list)=>{
+   
+     list.onclick = ()=>{
+        mobileNavContent[0].style.left = "-100vw"
+     }
+    return 
+})
+
+closeNavBtn[0].onclick = ()=>{
+    
+    mobileNavContent[0].style.left = "-100vw"
+}
+
+
 
 downlaodBtn.onclick =()=>{
     fileLinks[0].click()
