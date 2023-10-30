@@ -315,10 +315,7 @@ nav ul {
 
 /***************** Experience section *******************************/
 
-#experience{
-    margin-top: 100px;
 
-}
 .experience_item {
     display: flex;
     gap: 1em;
