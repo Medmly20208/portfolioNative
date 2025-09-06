@@ -9,8 +9,6 @@ const fileLinks = document.getElementsByClassName("file_download");
 const currentYearWrapper = document.getElementById("currentYear");
 const currentYear = new Date().getFullYear();
 
-currentYearWrapper.innerText = currentYear;
-
 navIcon[0].onclick = () => {
   mobileNavContent[0].style.left = "0px";
 };
@@ -33,7 +31,7 @@ Object.values(lists).map((list) => {
 closeNavBtn[0].onclick = () => {
   mobileNavContent[0].style.left = "-100vw";
 };
-
 downlaodBtn.onclick = () => {
   fileLinks[0].click();
+  fileLinks[1].click();
 };
